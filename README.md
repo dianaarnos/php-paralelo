@@ -10,9 +10,25 @@ Slides da palestra: --
 
 A extensão Parallel precisa do PHP ZTS. Nesse repositório, vamos usar uma imagem de Docker que já está com PHP 7.4 ZTS.
 
-Para rodar o script hello_world.php, rode os seguintes comandos na raiz do repositório:
+Todos os comandos a seguir são executados a partir da raiz do repositório.
+
+Setup:
+```shell script
+docker-compose up -d
+```
+
+Para rodar o script `hello_world.php`:
 
 ```shell script
-$ docker-compose up -d
-$ docker-compose exec php php hello_world.php
+docker-compose exec php php hello_world.php
 ```
+
+Para rodar o código de processamento paralelo:
+
+```shell script
+docker-compose exec php php paralelo/contage_caracteres.php [texto.txt] [workers=4]
+```
+
+Para rodar o código de processamento paralelo e distribuído:
+
+**TODO**
