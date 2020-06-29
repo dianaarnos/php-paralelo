@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  client:
+    build:
+      context: ../docker/php/
+    command: php client.php
+    ports:
+    - 80:8000
+    volumes:
+    - ./:/var/www
+
+  worker1:
+    build:
+      context: ../docker/php/
+    command: php worker.php worker1:8001
+    ports:
+    - 8001:8000
+    volumes:
+    - ./:/var/www
+
+  worker2:
+    build:
+      context: ../docker/php/
+    command: php worker.php worker2:8002
+    ports:
+    - 8002:8000
+    volumes:
+    - ./:/var/www

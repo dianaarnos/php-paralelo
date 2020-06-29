@@ -12,7 +12,7 @@ A extensão Parallel precisa do PHP ZTS. Nesse repositório, vamos usar uma imag
 
 Todos os comandos a seguir são executados a partir da raiz do repositório.
 
-Setup:
+Setup para o `hello_world.php` e o exemplo de processamento paralelo:
 ```shell script
 docker-compose up -d
 ```
@@ -26,9 +26,12 @@ docker-compose exec php php hello_world.php
 Para rodar o código de processamento paralelo:
 
 ```shell script
-docker-compose exec php php paralelo/contage_caracteres.php [texto.txt] [workers=4]
+docker-compose exec php php paralelo/contage_caracteres.php [workers=4]
 ```
 
-Para rodar o código de processamento paralelo e distribuído:
+Para rodar o código de processamento distribuído: 
 
-**TODO**
+```shell script
+$ cd distribuido
+$ docker-compose up
+```

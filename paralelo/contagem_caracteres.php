@@ -64,7 +64,7 @@ function run(string $caminhoArquivo, int $workers, string $diretorioTemporario):
     echo "Quantidade de threads a serem iniciadas: {$workers}" . PHP_EOL;
 
     dividirArquivo($caminhoArquivo, $diretorioTemporario, $workers);
-    $totalCaracteres = contagemCaracteres($diretorioTemporario, $workers);
+    $totalCaracteres = enviaParaWorkers($diretorioTemporario, $workers);
     removeArquivosTemporarios($diretorioTemporario);
 
     echo PHP_EOL . "O arquivo{$caminhoArquivo} tem {$totalCaracteres} caracteres." . PHP_EOL;
