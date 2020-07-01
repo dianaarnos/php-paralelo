@@ -4,7 +4,7 @@ Exemplo de código apresentado durante apresentação para o PHPPR: https://www.
 
 Implementação de processamento paralelo distribuído utilizando parallel e stream sockets.
 
-Slides da palestra: --  
+Slides da palestra: https://speakerdeck.com/dianaarnos/phppr-live-2020-php-paralelo-e-distribuido  
 
 ### Como usar
 
