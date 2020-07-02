@@ -1,6 +1,6 @@
 # PHP Paralelo e Distribuído
 
-Exemplo de código apresentado durante apresentação para o PHPPR: https://www.youtube.com/watch?v=sUcVGaENKvc 
+Exemplo de código apresentado durante apresentação para o PHPPR: https://youtu.be/0L00geiDgiQ
 
 Implementação de processamento paralelo distribuído utilizando parallel e stream sockets.
 
