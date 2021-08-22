@@ -1,3 +1,5 @@
+[![Contact me on Codementor](https://www.codementor.io/m-badges/dianaarnos/book-session.svg)](https://www.codementor.io/@dianaarnos?refer=badge)
+
 # PHP Paralelo e Distribuído
 
 Exemplo de código apresentado durante apresentação para o PHPPR: https://youtu.be/0L00geiDgiQ
