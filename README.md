@@ -2,11 +2,10 @@
 
 # PHP Paralelo e Distribuído
 
-Exemplo de código apresentado durante apresentação para o PHPPR: https://youtu.be/0L00geiDgiQ
-
+Exemplos de códigos apresentados durante apresentação.
 Implementação de processamento paralelo distribuído utilizando parallel e stream sockets.
 
-Slides da palestra: https://speakerdeck.com/dianaarnos/phppr-live-2020-php-paralelo-e-distribuido  
+Slides da palestra: https://speakerdeck.com/dianaarnos/php-alem-do-sincrono 
 
 ### Como usar
 
@@ -28,7 +27,7 @@ docker-compose exec php php hello_world.php
 Para rodar o código de processamento paralelo:
 
 ```shell script
-docker-compose exec php php paralelo/contage_caracteres.php [workers=4]
+docker-compose exec php php paralelo/contagem_caracteres.php [workers=4]
 ```
 
 Para rodar o código de processamento distribuído: 
